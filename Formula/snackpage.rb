@@ -1,9 +1,9 @@
 class Snackpage < Formula
   desc "Personal bookmark datastore with a keyboard-driven picker"
   homepage "https://github.com/drewvanstone/snackpage"
-  url "https://github.com/drewvanstone/snackpage/archive/refs/tags/v1.7.1.tar.gz"
-  version "1.7.1"
-  sha256 "01c652c7032686682869840363146146a30cad3dc0df50bb37c3613afd375457"
+  url "https://github.com/drewvanstone/snackpage/archive/refs/tags/v1.8.1.tar.gz"
+  version "1.8.1"
+  sha256 "011dc188a9268a6b61e6a17226cf728c88bf7b5471b8cb1bdf9d58d0af08b7da"
   license "MIT"
   head "https://github.com/drewvanstone/snackpage.git", branch: "main"
 
