@@ -1,14 +1,11 @@
 class Snackpage < Formula
   desc "Personal bookmark datastore with a keyboard-driven picker"
   homepage "https://github.com/drewvanstone/snackpage"
-  # NOTE: Local testing URL. Before pushing this tap to GitHub, change to:
-  #   url "https://github.com/drewvanstone/snackpage/archive/v1.7.1.tar.gz"
-  # The sha256 stays the same — `git archive` is deterministic for a given tag.
-  url "file:///tmp/snackpage-1.7.1.tar.gz"
+  url "https://github.com/drewvanstone/snackpage/archive/refs/tags/v1.7.1.tar.gz"
   version "1.7.1"
-  sha256 "43a22d1a488bc3638b00b17c9ddccde2353d9e49220ded48850ac734f0c112da"
+  sha256 "01c652c7032686682869840363146146a30cad3dc0df50bb37c3613afd375457"
   license "MIT"
-  head "file:///Users/dflower/Code/personal/snackpage", using: :git, branch: "main"
+  head "https://github.com/drewvanstone/snackpage.git", branch: "main"
 
   depends_on "go" => :build
 
