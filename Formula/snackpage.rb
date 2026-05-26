@@ -25,6 +25,20 @@ class Snackpage < Formula
     error_log_path var/"log/snackpage.log"
   end
 
+  def caveats
+    <<~EOS
+      To start snackpage now and on login:
+        brew services start snackpage
+
+      Then point your browser's new-tab page at:
+        http://127.0.0.1:8765
+
+      After upgrades, restart the daemon to pick up the new binary
+      (Homebrew does not auto-restart services):
+        brew services restart snackpage
+    EOS
+  end
+
   test do
     output = shell_output("#{bin}/snackpage version")
     assert_match "snackpage", output
